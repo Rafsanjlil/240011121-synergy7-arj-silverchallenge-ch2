@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">synergy</string>
+    <string name="app_name">Synergy Challenge</string>
     <string name="cost_of_service">Cost of Service</string>
     <string name="give_a_tip">Give a tip</string>
     <string name="amazing_20">Amazing (20%)</string>
     <string name="good_18">Good (18%)</string>
     <string name="ok_15">Ok (15%)</string>
     <string name="total">Total:</string>
-    <string name="curency"> $</string>
+    <string name="currency"> $</string>
     <string name="checkout">Checkout</string>
 </resources>

@@ -18,6 +18,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- card option akan tampil jika user switch on, bisa diimplementasikan jika sudah ada logika -->
     <include
         android:id="@+id/card_tip_option"
         layout="@layout/card_tip_option"
@@ -47,9 +48,8 @@
         layout="@layout/card_total_cost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

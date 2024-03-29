@@ -39,7 +39,7 @@
             android:id="@+id/text_currency_total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/curency"
+            android:text="@string/currency"
             android:textColor="@color/black"
             android:textSize="32sp"
             android:textStyle="bold"

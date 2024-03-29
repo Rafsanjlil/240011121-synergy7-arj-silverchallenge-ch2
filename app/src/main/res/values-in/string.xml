@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Synergy Challenge</string>
+    <string name="cost_of_service">Biaya Layanan</string>
+    <string name="give_a_tip">Beri Tip</string>
+    <string name="amazing_20">Memuaskan (20%)</string>
+    <string name="good_18">Bagus (18%)</string>
+    <string name="ok_15">Ok (15%)</string>
+    <string name="total">Total:</string>
+    <string name="currency"> Rp</string>
+    <string name="checkout">Checkout</string>
+</resources>

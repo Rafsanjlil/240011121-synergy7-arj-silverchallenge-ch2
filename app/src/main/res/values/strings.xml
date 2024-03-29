@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">synergy</string>
+    <string name="cost_of_service">Cost of Service</string>
+    <string name="give_a_tip">Give a tip</string>
+</resources>

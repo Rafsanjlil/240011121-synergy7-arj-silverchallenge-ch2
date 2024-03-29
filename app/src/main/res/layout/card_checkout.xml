@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="12dp"
+    android:layout_margin="8dp"
     app:cardCornerRadius="10dp"
-    app:strokeWidth="1dp"
+    app:strokeWidth="2dp"
     app:strokeColor="@color/stroke_color"
-    app:cardElevation="0dp">
+    app:cardElevation="2dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:padding="12dp">
 
         <TextView
             android:id="@+id/text_cost_of_service"
@@ -30,18 +29,23 @@
             android:id="@+id/text_currency"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="36sp"
+            android:textSize="42sp"
+            android:text=" $"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_cost_of_service"
-            tools:text="$" />
+            />
 
         <EditText
             android:id="@+id/edt_cost_of_service"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="48dp"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@id/text_currency"
             app:layout_constraintStart_toEndOf="@id/text_currency" />
 

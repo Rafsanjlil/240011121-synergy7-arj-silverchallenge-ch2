@@ -4,20 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
     tools:context=".MainActivity">
 
     <include
-        android:id="@+id/card_balance"
-        layout="@layout/card_checkout"
+        android:id="@+id/card_cost_of_service"
+        layout="@layout/card_cost_of_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <include
+        android:id="@+id/card_tip_option"
+        layout="@layout/card_tip_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/card_cost_of_service"
+        app:layout_constraintRight_toRightOf="@id/card_cost_of_service"
+        app:layout_constraintTop_toBottomOf="@id/card_cost_of_service" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgv_coffe"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/image_coffe"
+        app:shapeAppearanceOverlay="@style/circleImageViewShape"
+        app:layout_constraintLeft_toLeftOf="@id/card_tip_option"
+        app:layout_constraintRight_toRightOf="@id/card_tip_option"
+        app:layout_constraintTop_toBottomOf="@id/card_tip_option"
+        app:layout_constraintBottom_toTopOf="@id/card_total_cost"
+       />
+
+    <include
+        android:id="@+id/card_total_cost"
+        layout="@layout/card_total_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

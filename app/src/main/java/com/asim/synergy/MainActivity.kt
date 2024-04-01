@@ -3,7 +3,7 @@ package com.asim.synergy
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.asim.synergy.databinding.ActivityMainBinding
-import com.asim.synergy.databinding.CardTotalCostBinding
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -17,10 +17,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Akses TextView di dalam layout card
-        val cardBinding = CardTotalCostBinding.bind(findViewById(R.id.card_total_cost))
-        cardBinding.textSubtotal.text =
+        binding.cardTotalCost.textSubtotal.text =
             getString(R.string.currency) + totalLayanan.toString() +" + "+ getString(R.string.currency) + totalTip.toString()
-        cardBinding.textMargintotal.text=(totalLayanan+totalTip).toString()
+        binding.cardTotalCost.textMargintotal.text=(totalLayanan+totalTip).toString()
 
     }
 }
